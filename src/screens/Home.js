@@ -10,7 +10,7 @@ export const Home = () => {
 
   const loadData = async () => {
     let response = await fetch(
-      'https://backend-dd-1.onrender.com/api/foodData',
+      'https://backend-dd-2.onrender.com/api/foodData',
       {
         method: 'POST',
         headers: {

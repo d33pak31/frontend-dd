@@ -7,7 +7,7 @@ export const MyOrder = () => {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem('userEmail'))
-    await fetch('https://backend-dd-1.onrender.com/api/myOrderData', {
+    await fetch('https://backend-dd-2.onrender.com/api/myOrderData', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
