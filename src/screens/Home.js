@@ -12,7 +12,7 @@ export const Home = () => {
     let response = await fetch(
       'https://backend-dd-1.onrender.com/api/foodData',
       {
-        method: 'GET',
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
