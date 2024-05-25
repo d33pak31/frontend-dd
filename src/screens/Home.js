@@ -114,7 +114,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="container">
-        {foodCat.length !== 0 ? (
+        {foodCat.length ? (
           foodCat.map((data) => {
             return (
               <div className="row mb-3">
@@ -122,7 +122,7 @@ export const Home = () => {
                   {data.CategoryName}
                 </div>
                 <hr />
-                {foodItems.length !== 0 ? (
+                {foodItems.length ? (
                   foodItems
                     .filter(
                       (item) =>
