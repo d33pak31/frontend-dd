@@ -9,12 +9,15 @@ export const Home = () => {
   const [foodItems, setFoodItems] = useState([])
 
   const loadData = async () => {
-    let response = await fetch('http://localhost:4000/api/foodData', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
+    let response = await fetch(
+      'https://backend-dd-1.onrender.com//api/foodData',
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    )
     response = await response.json()
     // console.log(response[0], response[1])
 

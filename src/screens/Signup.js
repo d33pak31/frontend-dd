@@ -20,18 +20,21 @@ export const Signup = () => {
     e.preventDefault()
 
     try {
-      const response = await fetch('http://localhost:4000/api/createuser', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: credentials.name,
-          email: credentials.email,
-          password: credentials.password,
-          location: credentials.geolocation,
-        }),
-      })
+      const response = await fetch(
+        'https://backend-dd-1.onrender.com//api/createuser',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: credentials.name,
+            email: credentials.email,
+            password: credentials.password,
+            location: credentials.geolocation,
+          }),
+        }
+      )
 
       const json = await response.json()
       console.log(json)
