@@ -14,7 +14,7 @@ export const Login = () => {
 
     try {
       const response = await fetch(
-        'https://backend-dd-1.onrender.com//api/loginuser',
+        'https://backend-dd-1.onrender.com/api/loginuser',
         {
           method: 'POST',
           headers: {

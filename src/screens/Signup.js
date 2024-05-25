@@ -21,7 +21,7 @@ export const Signup = () => {
 
     try {
       const response = await fetch(
-        'https://backend-dd-1.onrender.com//api/createuser',
+        'https://backend-dd-1.onrender.com/api/createuser',
         {
           method: 'POST',
           headers: {
